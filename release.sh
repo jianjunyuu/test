@@ -3,7 +3,7 @@
 git status --porcelain;
 echo '--------';
 git status;
-if test -n "$(git status --porcelain)"; then
+if test -n "$(git status)"; then
   echo 'Unclean working tree. Commit or stash changes first.' >&2;
   exit 128;
 fi
