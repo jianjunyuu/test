@@ -13,7 +13,7 @@ BRANCH_PRODUCTION=master
 BRANCH_RELEASE=release
 # 开发环境分支
 BRANCH_DEV=dev
-if test -n ${PACKAGE_VERSION}; then
+if test -z "$PACKAGE_VERSION"; then
   echo 'The parameter `version` is required.' >&2;
   exit 128;
 fi
