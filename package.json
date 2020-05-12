@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "0.0.2",
+  "description": "用于测试git仓库的使用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mryujianjun/test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mryujianjun/test/issues"
+  },
+  "homepage": "https://github.com/mryujianjun/test#readme"
+}
