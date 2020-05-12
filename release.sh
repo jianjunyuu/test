@@ -27,22 +27,22 @@ echo "Releasing $VERSION"
 
 # 切换到生产分支
 git checkout ${BRANCH_PRODUCTION}
-## 拉取远程最新提交代码
-#git pull origin ${BRANCH_PRODUCTION}
-## 合并预上线分支到生产分支，保持生产环境代码的最新
-#git merge ${BRANCH_RELEASE}
-#
-## 打版本标签
-#git tag ${VERSION}
-#
-## 推送代码个标签到远程
-#git push origin ${BRANCH_PRODUCTION} --tags
-## 删除release分支
-#git branch -d ${BRANCH_RELEASE}
-#
-#echo "Release $VERSION successfully."
-#
-## 回归开发分支，避免停留在生产分支
-#git checkout ${BRANCH_DEV}
+# 拉取远程最新提交代码
+git pull origin ${BRANCH_PRODUCTION}
+# 合并预上线分支到生产分支，保持生产环境代码的最新
+git merge ${BRANCH_RELEASE}
+
+# 打版本标签
+git tag ${VERSION}
+
+# 推送代码个标签到远程
+git push origin ${BRANCH_PRODUCTION} --tags
+# 删除release分支
+git branch -d ${BRANCH_RELEASE}
+
+echo "Release $VERSION successfully."
+
+# 回归开发分支，避免停留在生产分支
+git checkout ${BRANCH_DEV}
 
 
