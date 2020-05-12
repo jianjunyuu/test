@@ -27,6 +27,7 @@ echo "Releasing $VERSION"
 
 # 切换到生产分支
 git checkout ${BRANCH_PRODUCTION}
+echo "pull"
 # 拉取远程最新提交代码
 git pull origin ${BRANCH_PRODUCTION}
 # 合并预上线分支到生产分支，保持生产环境代码的最新
