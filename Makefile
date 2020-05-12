@@ -12,7 +12,7 @@ release:
 	# 检查分支工作状态
 	./build/check-git-status.sh
 	# 将代码合并到master分支
-	./build/release.sh
+	./build/release.sh $(filter-out $@,$(MAKECMDGOALS)) \
 	# 部署正式环境
 	./build/deploy.sh
 
