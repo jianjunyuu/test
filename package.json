@@ -1,6 +1,6 @@
 {
   "name": "test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "用于测试git仓库的使用",
   "main": "index.js",
   "scripts": {
