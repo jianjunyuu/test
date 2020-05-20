@@ -12,6 +12,7 @@ BRANCH_DEV=dev
 
 git checkout ${BRANCH_DEV}
 
+
 # 需要检测一下是否需要进行一下操作：检测远程的head是否同步于本地head
 if test "0" == "$(git rev-list --count ...HEAD)"; then
     git pull origin ${BRANCH_DEV}
