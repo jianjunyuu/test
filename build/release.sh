@@ -19,7 +19,7 @@ if test -z "$PACKAGE_VERSION"; then
 fi
 
 # 确认是否继续后续到操作
-read -p "Releasing $VERSION and publish to production environment(git-branch:$BRANCH_PRODUCTION) - are you sure? (y/n)" -n 1 -r
+# read -p "Releasing $VERSION and publish to production environment(git-branch:$BRANCH_PRODUCTION) - are you sure? (y/n)" -n 1 -r
 
 # 将版本号写入package.json
 git checkout ${BRANCH_RELEASE}
